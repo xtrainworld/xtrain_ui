@@ -3,10 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "node server.js",
+    "start-dev": "npm cache clean --force && npm install && ng serve --port 4200 --open",
+    "test": "ng test",
+    "lint": "ng lint",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --aot --prod"
   },
   "private": true,
   "dependencies": {
