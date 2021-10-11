@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-// import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { Router } from '@angular/router';
 import { StatisticsComponent } from './shared/modal/courses/statistics-modal/statistics.component';
 
 @Component({
@@ -9,11 +9,4 @@ import { StatisticsComponent } from './shared/modal/courses/statistics-modal/sta
 })
 export class AppComponent {
   title = 'XTrain';
-
-  // constructor(private ngModal: NgbModal) {}
-
-  openStatisticsCourse() {
-    // const statisticsModalRef = this.ngModal.open(StatisticsComponent, { size: 'lg' });
-  }
-
 }

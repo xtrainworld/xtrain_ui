@@ -29,19 +29,19 @@
   <div class="container">
     <div class="text-center">
       <h2 class="section-heading text-uppercase">courses</h2>
-      <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+      <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
     </div>
     <div class="row">
       <div class="col-lg-4 col-sm-6 mb-4">
         <!-- courses item 1-->
-        <div class="courses-item"><a class="courses-link" href="#coursesModal1">
+        <div class="courses-item"><a class="courses-link" data-bs-toggle="modal" href="#statisticsCourse">
             <div class="courses-hover">
               <div class="courses-hover-content"><i class="fas fa-plus fa-3x"></i></div>
             </div><img class="img-fluid" src="assets/img/courses/1.jpg" alt="...">
           </a>
           <div class="courses-caption">
-            <div class="courses-caption-heading">Threads</div>
-            <div class="courses-caption-subheading text-muted">Illustration</div>
+            <div class="courses-caption-heading">Statistics</div>
+            <!-- <div class="courses-caption-subheading text-muted">quantified models and representations for a given set of experimental data or real-life studies</div> -->
           </div>
         </div>
       </div>
@@ -337,5 +337,11 @@
       </div>
     </div>
   </div>
+
+  <div class="courses-modal modal fade" id="statisticsCourse" tabindex="-1" role="dialog" aria-hidden="true">
+    <app-statistics></app-statistics>
+  </div>
+
+
 </footer>
 <router-outlet></router-outlet>
